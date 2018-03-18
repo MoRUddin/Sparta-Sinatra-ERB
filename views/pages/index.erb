@@ -1,0 +1,7 @@
+<h1>Welcome to the Games Index Page</h1>
+
+  <% @games.each do |games| %>
+    <div class="">
+      <a href="/pages/<%= games[:id] %>"><%= games[:title] %></a>
+    </div>
+  <% end %>
